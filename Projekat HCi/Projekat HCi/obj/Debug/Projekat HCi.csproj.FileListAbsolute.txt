@@ -1,0 +1,30 @@
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Projekat HCi.exe.config
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Projekat HCi.exe
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Projekat HCi.pdb
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.AssemblyReference.cache
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.SuggestedBindingRedirects.cache
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\MainWindow.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\App.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi_MarkupCompile.cache
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi_MarkupCompile.lref
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\MainWindow.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.g.resources
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat_HCi.Properties.Resources.resources
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.GenerateResource.cache
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.CoreCompileInputs.cache
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.exe
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.pdb
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Pages\Login.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Pages\Registracija.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Pages\Login.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Pages\Registracija.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PocetnaUlogovaniKorisnik.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PocetnaUlogovaniKorisnik.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PocetnaUlogovaniMenadzer.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\KupljeneKarte.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\RedVoznje.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\RezervisaneKarte.g.cs
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PocetnaUlogovaniMenadzer.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\KupljeneKarte.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\RedVoznje.baml
+C:\Users\djole\OneDrive\Desktop\hci projekat git\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\RezervisaneKarte.baml

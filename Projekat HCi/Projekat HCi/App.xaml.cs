@@ -13,5 +13,6 @@ namespace Projekat_HCi
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

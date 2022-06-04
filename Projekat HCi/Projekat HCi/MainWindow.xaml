@@ -6,7 +6,15 @@
         xmlns:local="clr-namespace:Projekat_HCi"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <DockPanel>
+        <Grid DockPanel.Dock="Top" Height="40">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Name="PrijavaDugme" Content="Prijava"   Background="Navy" Foreground="White" Grid.Column ="0"  MinWidth="100" Margin="0,0,0,0" Click="Button_Click"/>
+            <Button Name="RegistracijaDugme" Content="Registracija" Grid.Column ="1" MinWidth="100" Margin="0,0,0,0" Click="Button_Click_1"/>
+        </Grid>
+        <Frame x:Name="Main" />
+    </DockPanel>
 </Window>
