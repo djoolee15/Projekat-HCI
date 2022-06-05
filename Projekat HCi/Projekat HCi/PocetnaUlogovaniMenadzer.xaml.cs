@@ -23,5 +23,110 @@ namespace Projekat_HCi
         {
             InitializeComponent();
         }
+
+        private void iredavoznje_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new ();
+
+            iredavoznje.Background = Brushes.Navy;
+            iredavoznje.Foreground = Brushes.White;
+
+            ivoznihlinija.Background = Brushes.White;
+            ivoznihlinija.Foreground = Brushes.Black;
+            ivozova.Background = Brushes.White;
+            ivozova.Foreground = Brushes.Black;
+            ppmesec.Background = Brushes.White;
+            ppmesec.Foreground = Brushes.Black;
+            ppvoznja.Background = Brushes.White;
+            ppvoznja.Foreground = Brushes.Black;
+        }
+
+        private void ivoznihlinija_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new();
+
+            ivoznihlinija.Background = Brushes.Navy;
+            ivoznihlinija.Foreground = Brushes.White;
+
+            iredavoznje.Background = Brushes.White;
+            iredavoznje.Foreground = Brushes.Black;
+            ivozova.Background = Brushes.White;
+            ivozova.Foreground = Brushes.Black;
+            ppmesec.Background = Brushes.White;
+            ppmesec.Foreground = Brushes.Black;
+            ppvoznja.Background = Brushes.White;
+            ppvoznja.Foreground = Brushes.Black;
+        }
+
+        private void ivozova_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new();
+
+            ivozova.Background = Brushes.Navy;
+            ivozova.Foreground = Brushes.White;
+
+            ivoznihlinija.Background = Brushes.White;
+            ivoznihlinija.Foreground = Brushes.Black;
+            iredavoznje.Background = Brushes.White;
+            iredavoznje.Foreground = Brushes.Black;
+            ppmesec.Background = Brushes.White;
+            ppmesec.Foreground = Brushes.Black;
+            ppvoznja.Background = Brushes.White;
+            ppvoznja.Foreground = Brushes.Black;
+        }
+
+        private void ppmesec_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new();
+
+            ppmesec.Background = Brushes.Navy;
+            ppmesec.Foreground = Brushes.White;
+
+            ivoznihlinija.Background = Brushes.White;
+            ivoznihlinija.Foreground = Brushes.Black;
+            ivozova.Background = Brushes.White;
+            ivozova.Foreground = Brushes.Black;
+            iredavoznje.Background = Brushes.White;
+            iredavoznje.Foreground = Brushes.Black;
+            ppvoznja.Background = Brushes.White;
+            ppvoznja.Foreground = Brushes.Black;
+        }
+
+        private void ppvoznja_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new();
+
+            ppvoznja.Background = Brushes.Navy;
+            ppvoznja.Foreground = Brushes.White;
+
+            ivoznihlinija.Background = Brushes.White;
+            ivoznihlinija.Foreground = Brushes.Black;
+            ivozova.Background = Brushes.White;
+            ivozova.Foreground = Brushes.Black;
+            ppmesec.Background = Brushes.White;
+            ppmesec.Foreground = Brushes.Black;
+            iredavoznje.Background = Brushes.White;
+            iredavoznje.Foreground = Brushes.Black;
+        }
+
+        private void LogOut_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaMenadzer.Content = new();
+
+            iredavoznje.Background = Brushes.Navy;
+            iredavoznje.Foreground = Brushes.White;
+
+            ivoznihlinija.Background = Brushes.White;
+            ivoznihlinija.Foreground = Brushes.Black;
+            ivozova.Background = Brushes.White;
+            ivozova.Foreground = Brushes.Black;
+            ppmesec.Background = Brushes.White;
+            ppmesec.Foreground = Brushes.Black;
+            ppvoznja.Background = Brushes.White;
+            ppvoznja.Foreground = Brushes.Black;
+        }
     }
+
+    
+
 }

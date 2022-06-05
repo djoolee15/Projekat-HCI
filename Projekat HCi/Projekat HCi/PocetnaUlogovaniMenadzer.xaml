@@ -7,6 +7,24 @@
         mc:Ignorable="d"
         Title="PocetnaUlogovaniMenadzer" Height="450" Width="800">
     <Grid>
-        
+        <DockPanel>
+            <Grid DockPanel.Dock="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Name="iredavoznje" Content="Izmena Reda Voznje"   Background="Navy" Foreground="White" Grid.Column ="0"  MinWidth="100" Margin="0,0,0,0" Click="iredavoznje_Click"/>
+                <Button Name="ivoznihlinija" Content="Izmena Voznih Linija"  Background="White" Foreground="Black" Grid.Column ="1"  MinWidth="100" Margin="0,0,0,0" Click="ivoznihlinija_Click"/>
+                <Button Name="ivozova" Content="Izmena Vozova"  Background="White" Foreground="Black" Grid.Column ="2"  MinWidth="100" Margin="0,0,0,0" Click="ivozova_Click" />
+                <Button Name="ppmesec" Content="Pregled Prodaje - Mesec"  Background="White" Foreground="Black" Grid.Column ="3"  MinWidth="100" Margin="0,0,0,0" Click="ppmesec_Click" />
+                <Button Name="ppvoznja" Content="Pregled Prodaje - Voznja"  Background="White" Foreground="Black" Grid.Column ="4"  MinWidth="100" Margin="0,0,0,0" Click="ppvoznja_Click" />
+                <Button Name="LogOut" Content="Odjava"  Background="White" Foreground="Black" Grid.Column ="5"  MinWidth="50" Margin="25,10,25,10" Click="LogOut_Click"/>
+            </Grid>
+            <Frame x:Name="PocetnaMenadzer" DockPanel.Dock="Bottom"/>
+        </DockPanel>
     </Grid>
 </Window>
