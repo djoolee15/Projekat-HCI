@@ -41,6 +41,8 @@ namespace Projekat_HCi.Pages
                 }
             }
             */
+            PocetnaUlogovaniKorisnik logged = new PocetnaUlogovaniKorisnik();
+            logged.Show();
         }
     }
 }

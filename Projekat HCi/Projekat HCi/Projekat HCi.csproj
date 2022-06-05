@@ -64,6 +64,12 @@
     <Compile Include="PagesKorisnik\RezervisaneKarte.xaml.cs">
       <DependentUpon>RezervisaneKarte.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PagesKorisnik\VozneLinije.xaml.cs">
+      <DependentUpon>VozneLinije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesKorisnik\VozneLinijeMreza.xaml.cs">
+      <DependentUpon>VozneLinijeMreza.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PocetnaUlogovaniMenadzer.xaml.cs">
       <DependentUpon>PocetnaUlogovaniMenadzer.xaml</DependentUpon>
     </Compile>
@@ -89,6 +95,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PagesKorisnik\RezervisaneKarte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesKorisnik\VozneLinije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesKorisnik\VozneLinijeMreza.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekat_HCi.PagesKorisnik;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,27 +27,85 @@ namespace Projekat_HCi
 
         private void RedVoznje_Click(object sender, RoutedEventArgs e)
         {
+            PocetnaKorisnik.Content = new RedVoznje();
 
+            RedVoznje.Background = Brushes.Navy;
+            RedVoznje.Foreground = Brushes.White;
+
+            VozneLinije.Background = Brushes.White;
+            VozneLinije.Foreground = Brushes.Black;
+            Mreza.Background = Brushes.White;
+            Mreza.Foreground = Brushes.Black;
+            RezKarte.Background = Brushes.White;
+            RezKarte.Foreground = Brushes.Black;
+            KupljeneKarte.Background = Brushes.White;
+            KupljeneKarte.Foreground = Brushes.Black;
         }
 
         private void VozneLinije_Click(object sender, RoutedEventArgs e)
         {
+            PocetnaKorisnik.Content = new RedVoznje();
 
+            VozneLinije.Background = Brushes.Navy;
+            VozneLinije.Foreground = Brushes.White;
+
+            RedVoznje.Background = Brushes.White;
+            RedVoznje.Foreground = Brushes.Black;
+            Mreza.Background = Brushes.White;
+            Mreza.Foreground = Brushes.Black;
+            RezKarte.Background = Brushes.White;
+            RezKarte.Foreground = Brushes.Black;
+            KupljeneKarte.Background = Brushes.White;
+            KupljeneKarte.Foreground = Brushes.Black;
         }
 
         private void Mreza_Click(object sender, RoutedEventArgs e)
         {
+            PocetnaKorisnik.Content = new RedVoznje();
 
+            Mreza.Background = Brushes.Navy;
+            Mreza.Foreground = Brushes.White;
+            VozneLinije.Background = Brushes.White;
+            VozneLinije.Foreground = Brushes.Black;
+            RedVoznje.Background = Brushes.White;
+            RedVoznje.Foreground = Brushes.Black;
+            RezKarte.Background = Brushes.White;
+            RezKarte.Foreground = Brushes.Black;
+            KupljeneKarte.Background = Brushes.White;
+            KupljeneKarte.Foreground = Brushes.Black;
         }
 
         private void KupljeneKarte_Click(object sender, RoutedEventArgs e)
         {
+            PocetnaKorisnik.Content = new RedVoznje();
 
+            KupljeneKarte.Background = Brushes.Navy;
+            KupljeneKarte.Foreground = Brushes.White;
+
+            VozneLinije.Background = Brushes.White;
+            VozneLinije.Foreground = Brushes.Black;
+            Mreza.Background = Brushes.White;
+            Mreza.Foreground = Brushes.Black;
+            RezKarte.Background = Brushes.White;
+            RezKarte.Foreground = Brushes.Black;
+            RedVoznje.Background = Brushes.White;
+            RedVoznje.Foreground = Brushes.Black;
         }
 
         private void RezKarte_Click(object sender, RoutedEventArgs e)
         {
+            PocetnaKorisnik.Content = new RedVoznje();
 
+            RezKarte.Background = Brushes.Navy;
+            RezKarte.Foreground = Brushes.White;
+            VozneLinije.Background = Brushes.White;
+            VozneLinije.Foreground = Brushes.Black;
+            Mreza.Background = Brushes.White;
+            Mreza.Foreground = Brushes.Black;
+            RedVoznje.Background = Brushes.White;
+            RedVoznje.Foreground = Brushes.Black;
+            KupljeneKarte.Background = Brushes.White;
+            KupljeneKarte.Foreground = Brushes.Black;
         }
 
         private void LogOut_Click(object sender, RoutedEventArgs e)
