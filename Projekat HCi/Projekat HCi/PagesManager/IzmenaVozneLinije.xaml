@@ -9,6 +9,46 @@
       Title="IzmenaVozneLinije">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=linije_prikaz}" IsReadOnly="False" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" MinWidth="100" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Polazak" MinWidth="100" Binding="{Binding Polazak}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Dolazak" MinWidth="100" Binding="{Binding Dolazak}"></DataGridTextColumn>
+
+            </DataGrid.Columns>
+
+
+        </DataGrid>
+        <Grid Grid.Column="0" Grid.Row="1" DataContext="{Binding ElementName=dgrMain,Path=SelectedItem}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="1">Id:</TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="2">Polazak:</TextBlock>
+            <TextBlock Grid.Column="0" Grid.Row="3">Dolazak:</TextBlock>
+            <TextBox Name="id_1" Grid.Column="1" Grid.Row="1" Text="{Binding Path=Id}"></TextBox>
+            <TextBox Name="br_m" Grid.Column="1" Grid.Row="2" Text="{Binding Path=Polazak}"></TextBox>
+            <TextBox Name="br_v" Grid.Column="1" Grid.Row="3" Text="{Binding Path=Dolazak}"></TextBox>
+            <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
+                <Button Content="Obrisi" Click="Button_Click" Margin="20,0,20,0" MinWidth="100"/>
+                <Button Content="Dodaj" Click="Button_Click_1" Margin="20,0,20,0" MinWidth="100"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Page>

@@ -31,22 +31,29 @@ namespace Projekat_HCi
 
 
             Korisnik djole = new Korisnik { Ime = "Djordje", Prezime = "Vajagic", Lozinka = "1234", Mejl = "djole@gmail.com", KorisnickoIme = "djole" };
-            Korisnik petar = new Korisnik { Ime = "petar", Prezime = "petrovic", Lozinka =  "1234",  Mejl = "petar@gmail.com",  KorisnickoIme = "petar"};
+            Korisnik petar = new Korisnik { Ime = "petar", Prezime = "petrovic", Lozinka = "1234", Mejl = "petar@gmail.com", KorisnickoIme = "petar" };
             korisnici = new List<Korisnik>();
             korisnici.Add(djole);
             korisnici.Add(petar);
 
-            Voz voz1 = new Voz { Broj_mesta = 30, Broj_vagona = 5, Naziv = "Super Brzi Voz",Id = 1 };
+            Voz voz1 = new Voz { Broj_mesta = 30, Broj_vagona = 5, Naziv = "Super Brzi Voz", Id = 1 };
             Voz voz2 = new Voz { Broj_mesta = 20, Broj_vagona = 4, Naziv = "Ne Tako Brzi Voz", Id = 2 };
             vozovi = new List<Voz>();
             vozovi.Add(voz1);
             vozovi.Add(voz2);
 
-            VoznaLinija voznalinija1 = new VoznaLinija("novi sad", "beograd");
+            VoznaLinija voznalinija1 = new VoznaLinija { Polazak = "novi sad", Dolazak = "beograd", Id = 1 };
+            VoznaLinija voznalinija2 = new VoznaLinija { Polazak = "novi sad", Dolazak = "nis", Id = 2};
+            vozne_linije = new List<VoznaLinija>();
+            vozne_linije.Add(voznalinija1);
+            vozne_linije.Add(voznalinija2);
 
-            Voznja voznja1 = new Voznja(voz1, voznalinija1, DateTime.Now);  // ovde prepraviti da ne bude datetime now
-
+            Voznja voznja1 = new Voznja {Voz = voz1,Vl =  voznalinija1,  DatumVoznje = DateTime.Now };  // ovde prepraviti da ne bude datetime now
+            voznje = new List<Voznja>();
+            voznje.Add(voznja1);
+            
             Karta karta1 = new Karta(petar, voznja1);
+
             /*this._ViewModel = new Zeleznica
             {
                 korisnici = new List<Korisnik>()
@@ -76,6 +83,7 @@ namespace Projekat_HCi
         public List<VoznaLinija> vozne_linije;
         public List<Voznja> voznje;
         public List<Karta> karte;
+        
         //public Zeleznica _ViewModel;
 
         private void Button_Click(object sender, RoutedEventArgs e)
