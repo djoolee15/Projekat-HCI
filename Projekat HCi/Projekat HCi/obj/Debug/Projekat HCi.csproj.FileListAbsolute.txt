@@ -62,3 +62,17 @@ C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projeka
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\VozneLinijeMreza.g.cs
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\VozneLinije.baml
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\VozneLinijeMreza.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaRedVoznje.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaVoz.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaVozneLinije.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\PregledMesec.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\PregledVoznja.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaRedVoznje.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaVoz.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\IzmenaVozneLinije.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\PregledMesec.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesManager\PregledVoznja.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Prism.dll
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Prism.pdb
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Prism.xml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.CopyComplete

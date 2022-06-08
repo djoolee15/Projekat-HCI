@@ -35,6 +35,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Prism, Version=8.1.97.5141, Culture=neutral, PublicKeyToken=40ee6c3a2184dc59, processorArchitecture=MSIL">
+      <HintPath>..\packages\Prism.Core.8.1.97\lib\net47\Prism.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,6 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Karta.cs" />
+    <Compile Include="Model\Voz.cs" />
+    <Compile Include="Model\VoznaLinija.cs" />
+    <Compile Include="Model\Voznja.cs" />
     <Compile Include="PagesKorisnik\KupljeneKarte.xaml.cs">
       <DependentUpon>KupljeneKarte.xaml</DependentUpon>
     </Compile>
@@ -70,10 +77,25 @@
     <Compile Include="PagesKorisnik\VozneLinijeMreza.xaml.cs">
       <DependentUpon>VozneLinijeMreza.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PagesManager\IzmenaRedVoznje.xaml.cs">
+      <DependentUpon>IzmenaRedVoznje.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesManager\IzmenaVoz.xaml.cs">
+      <DependentUpon>IzmenaVoz.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesManager\IzmenaVozneLinije.xaml.cs">
+      <DependentUpon>IzmenaVozneLinije.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesManager\PregledMesec.xaml.cs">
+      <DependentUpon>PregledMesec.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PagesManager\PregledVoznja.xaml.cs">
+      <DependentUpon>PregledVoznja.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PocetnaUlogovaniMenadzer.xaml.cs">
       <DependentUpon>PocetnaUlogovaniMenadzer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ViewModel\Korisnici.cs" />
+    <Compile Include="ViewModel\Zeleznica.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -103,6 +125,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PagesKorisnik\VozneLinijeMreza.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesManager\IzmenaRedVoznje.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesManager\IzmenaVoz.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesManager\IzmenaVozneLinije.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesManager\PregledMesec.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesManager\PregledVoznja.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +193,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -159,8 +202,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PagesManager\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

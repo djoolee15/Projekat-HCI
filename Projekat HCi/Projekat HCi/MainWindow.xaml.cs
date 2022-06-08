@@ -28,19 +28,55 @@ namespace Projekat_HCi
         {
             InitializeComponent();
             Main.Content = new Login();
-            this.korVM = new Korisnici
+
+
+            Korisnik djole = new Korisnik { Ime = "Djordje", Prezime = "Vajagic", Lozinka = "1234", Mejl = "djole@gmail.com", KorisnickoIme = "djole" };
+            Korisnik petar = new Korisnik { Ime = "petar", Prezime = "petrovic", Lozinka =  "1234",  Mejl = "petar@gmail.com",  KorisnickoIme = "petar"};
+            korisnici = new List<Korisnik>();
+            korisnici.Add(djole);
+            korisnici.Add(petar);
+
+            Voz voz1 = new Voz { Broj_mesta = 30, Broj_vagona = 5, Naziv = "Super Brzi Voz",Id = 1 };
+            Voz voz2 = new Voz { Broj_mesta = 20, Broj_vagona = 4, Naziv = "Ne Tako Brzi Voz", Id = 2 };
+            vozovi = new List<Voz>();
+            vozovi.Add(voz1);
+            vozovi.Add(voz2);
+
+            VoznaLinija voznalinija1 = new VoznaLinija("novi sad", "beograd");
+
+            Voznja voznja1 = new Voznja(voz1, voznalinija1, DateTime.Now);  // ovde prepraviti da ne bude datetime now
+
+            Karta karta1 = new Karta(petar, voznja1);
+            /*this._ViewModel = new Zeleznica
             {
-                lista_korisnika = new List<Korisnik>()
+                korisnici = new List<Korisnik>()
                 {
-                    new Korisnik("Djordje","Vajagic","1234","djole@gmail.com","djole")
+                    djole,petar
+                },
+                vozovi = new List<Voz>() { 
+                    voz1
+                },
+                vozne_linije = new List<VoznaLinija>() { 
+                    voznalinija1
+                },
+                voznje = new List<Voznja>()
+                {
+                    voznja1
+                },
+                karte = new List<Karta> { 
+                    karta1
                 }
             };
-            this.DataContext = this.korVM;
-            this.korisnici = this.korVM.lista_korisnika;
+            this.DataContext = this._ViewModel;
+            //this.korisnici = this.korVM.lista_korisnika;  ovo u sustini nije radilo nista jer je prazno
+            */
         }
-
-        public  List<Korisnik> korisnici;
-        private Korisnici korVM;
+        public List<Voz> vozovi;
+        public List<Korisnik> korisnici;
+        public List<VoznaLinija> vozne_linije;
+        public List<Voznja> voznje;
+        public List<Karta> karte;
+        //public Zeleznica _ViewModel;
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

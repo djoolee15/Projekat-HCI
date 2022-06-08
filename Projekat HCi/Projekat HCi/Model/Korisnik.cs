@@ -1,28 +1,107 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Projekat_HCi.Model
 {
-    public class Korisnik
+    public class Korisnik : INotifyPropertyChanged
     {
-        public string ime { get; set; }
-        public string prezime { get; set; }
-        public string lozinka { get; set; }
-        public string mejl { get; set; }
-        public string korisnickoIme { get; set; }
-
-
-        public Korisnik() { }
-
-        public Korisnik(string ime, string prezime, string lozinka, string mejl, string korisnickoIme) {
-            this.ime = ime;
-            this.prezime = prezime; 
-            this.lozinka = lozinka;
-            this.mejl = mejl;
-            this.korisnickoIme = korisnickoIme;
+        public event PropertyChangedEventHandler PropertyChanged;
+    protected virtual void OnPropertyChanged(string name)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(name));
         }
+    }
+
+
+        private string ime;
+        private string prezime;
+        private string lozinka;
+        private string mejl;
+        private string korisnickoIme;
+
+        public string Ime
+        {
+            get
+            {
+                return ime;
+            }
+            set
+            {
+                if (value != ime)
+                {
+                    ime = value;
+                    OnPropertyChanged("Ime");
+                }
+            }
+        }
+
+        public string Prezime
+        {
+            get
+            {
+                return prezime;
+            }
+            set
+            {
+                if (value != prezime)
+                {
+                    prezime = value;
+                    OnPropertyChanged("Prezime");
+                }
+            }
+        }
+        public string KorisnickoIme
+        {
+            get
+            {
+                return korisnickoIme;
+            }
+            set
+            {
+                if (value != korisnickoIme)
+                {
+                    korisnickoIme = value;
+                    OnPropertyChanged("KorisnickoIme");
+                }
+            }
+        }
+        public string Mejl
+        {
+            get
+            {
+                return mejl;
+            }
+            set
+            {
+                if (value != mejl)
+                {
+                    mejl = value;
+                    OnPropertyChanged("Mejl");
+                }
+            }
+        }
+
+        public string Lozinka
+        {
+            get
+            {
+                return lozinka;
+            }
+            set
+            {
+                if (value != lozinka)
+                {
+                    lozinka = value;
+                    OnPropertyChanged("Lozinka");
+                }
+            }
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekat_HCi.PagesManager;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -26,7 +27,7 @@ namespace Projekat_HCi
 
         private void iredavoznje_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new ();
+            PocetnaMenadzer.Content = new IzmenaRedVoznje();
 
             iredavoznje.Background = Brushes.Navy;
             iredavoznje.Foreground = Brushes.White;
@@ -43,7 +44,7 @@ namespace Projekat_HCi
 
         private void ivoznihlinija_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new();
+            PocetnaMenadzer.Content = new IzmenaVozneLinije();
 
             ivoznihlinija.Background = Brushes.Navy;
             ivoznihlinija.Foreground = Brushes.White;
@@ -60,7 +61,7 @@ namespace Projekat_HCi
 
         private void ivozova_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new();
+            PocetnaMenadzer.Content = new IzmenaVoz();
 
             ivozova.Background = Brushes.Navy;
             ivozova.Foreground = Brushes.White;
@@ -77,7 +78,7 @@ namespace Projekat_HCi
 
         private void ppmesec_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new();
+            PocetnaMenadzer.Content = new PregledMesec();
 
             ppmesec.Background = Brushes.Navy;
             ppmesec.Foreground = Brushes.White;
@@ -94,7 +95,7 @@ namespace Projekat_HCi
 
         private void ppvoznja_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new();
+            PocetnaMenadzer.Content = new PregledVoznja();
 
             ppvoznja.Background = Brushes.Navy;
             ppvoznja.Foreground = Brushes.White;
@@ -111,19 +112,7 @@ namespace Projekat_HCi
 
         private void LogOut_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaMenadzer.Content = new();
-
-            iredavoznje.Background = Brushes.Navy;
-            iredavoznje.Foreground = Brushes.White;
-
-            ivoznihlinija.Background = Brushes.White;
-            ivoznihlinija.Foreground = Brushes.Black;
-            ivozova.Background = Brushes.White;
-            ivozova.Foreground = Brushes.Black;
-            ppmesec.Background = Brushes.White;
-            ppmesec.Foreground = Brushes.Black;
-            ppvoznja.Background = Brushes.White;
-            ppvoznja.Foreground = Brushes.Black;
+            
         }
     }
 

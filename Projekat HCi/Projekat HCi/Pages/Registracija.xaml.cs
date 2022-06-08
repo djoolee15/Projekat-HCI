@@ -27,7 +27,7 @@ namespace Projekat_HCi.Pages
 
         private void Registracija_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
     }
 }

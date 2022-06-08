@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\App.xaml
-10963834892
+151829843207
 
-171941847514
-13-1310406943
-MainWindow.xaml;PagesKorisnik\KupljeneKarte.xaml;PagesKorisnik\RedVoznje.xaml;PagesKorisnik\RezervisaneKarte.xaml;PagesKorisnik\VozneLinije.xaml;PagesKorisnik\VozneLinijeMreza.xaml;Pages\Login.xaml;Pages\Registracija.xaml;PocetnaUlogovaniKorisnik.xaml;PocetnaUlogovaniMenadzer.xaml;
+261011118962
+14370070146
+MainWindow.xaml;PagesKorisnik\KupljeneKarte.xaml;PagesKorisnik\RedVoznje.xaml;PagesKorisnik\RezervisaneKarte.xaml;PagesKorisnik\VozneLinije.xaml;PagesKorisnik\VozneLinijeMreza.xaml;PagesManager\IzmenaRedVoznje.xaml;PagesManager\IzmenaVoz.xaml;PagesManager\IzmenaVozneLinije.xaml;PagesManager\PregledMesec.xaml;PagesManager\PregledVoznja.xaml;Pages\Login.xaml;Pages\Registracija.xaml;PocetnaUlogovaniKorisnik.xaml;PocetnaUlogovaniMenadzer.xaml;
 
-False
+True
 
