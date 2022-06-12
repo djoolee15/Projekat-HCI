@@ -52,12 +52,18 @@ namespace Projekat_HCi.PagesManager
             
 
             List<Voz> vozovi = (Application.Current.MainWindow as MainWindow).vozovi;
+            vozovi_prikaz = new ObservableCollection<Voz>(vozovi);
+
+
             //ObservableCollection<string> vozovi_prikaz = new ObservableCollection<string>();
+            
             foreach (Voz voz in vozovi) {
                 //vozovi_prikaz.Add(voz.naziv);
                 Console.WriteLine(voz.Naziv + " " + voz.Id);
             }
-            vozovi_prikaz = new ObservableCollection<Voz>(vozovi);
+            
+           
+
 
 
 
@@ -77,9 +83,35 @@ namespace Projekat_HCi.PagesManager
             var selectedItem = dgrMain.SelectedItem;
             if (selectedItem != null)
             {
+                Voz v = (Voz)selectedItem;
                 vozovi_prikaz.Remove((Voz)selectedItem);
+                //(Application.Current.MainWindow as MainWindow).vozovi.Remove((Voz)selectedItem);
+                foreach (Voz voz in (Application.Current.MainWindow as MainWindow).vozovi)
+                {
+                    if (v.Id == voz.Id)
+                    {
+                        (Application.Current.MainWindow as MainWindow).vozovi.Remove(v);
+                        (Application.Current.MainWindow as MainWindow).kontroler.BrisanjeVoza(v);
+
+                        foreach (Voz vozic in vozovi_prikaz)
+                        {
+                            //vozovi_prikaz.Add(voz.naziv);
+                            Console.WriteLine(vozic.Naziv + " " + vozic.Id);
+                        }
+
+
+
+
+                        break;
+                    }
+                }
+
                 //dgrMain.Items.Remove(selectedItem);
             }
+
+
+
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -97,26 +129,26 @@ namespace Projekat_HCi.PagesManager
 
         }
         /*
-private DelegateCommand<Voz> _deleteCommand;
-public DelegateCommand<Voz> DeleteCommand =>
-_deleteCommand ?? (_deleteCommand = new DelegateCommand<Voz>(ExecuteCommandName));
+        private DelegateCommand<Voz> _deleteCommand;
+        public DelegateCommand<Voz> DeleteCommand =>
+        _deleteCommand ?? (_deleteCommand = new DelegateCommand<Voz>(ExecuteCommandName));
 
-void ExecuteCommandName(Voz parameter) { 
-vozovi_prikaz.Remove(parameter);
-}
-
-
-<DataGridTemplateColumn.CellTemplate>
-      <DataTemplate>
-          <StackPanel Orientation="Horizontal">
-              <Button Command="{Binding DataContext.DeleteCommand, ElementName = izmena_vo}" CommandParameter="{Binding}">Izbrisi</Button>
-          </StackPanel>
-      </DataTemplate>
-  </DataGridTemplateColumn.CellTemplate>
+        void ExecuteCommandName(Voz parameter) { 
+        vozovi_prikaz.Remove(parameter);
+        }
 
 
+        <DataGridTemplateColumn.CellTemplate>
+            <DataTemplate>
+                <StackPanel Orientation="Horizontal">
+                    <Button Command="{Binding DataContext.DeleteCommand, ElementName = izmena_vo}" CommandParameter="{Binding}">Izbrisi</Button>
+                </StackPanel>
+            </DataTemplate>
+        </DataGridTemplateColumn.CellTemplate>
 
-*/
+
+
+        */
 
     }
 }

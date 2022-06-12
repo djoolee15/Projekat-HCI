@@ -46,6 +46,7 @@ namespace Projekat_HCi.Pages
                         PocetnaUlogovaniMenadzer logged = new PocetnaUlogovaniMenadzer();
                         logged.Show();
                         pronadjen = true;
+                        
                     }
                     else { 
                     PocetnaUlogovaniKorisnik logged = new PocetnaUlogovaniKorisnik();

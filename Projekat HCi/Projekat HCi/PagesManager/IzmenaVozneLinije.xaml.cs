@@ -52,11 +52,13 @@ namespace Projekat_HCi.PagesManager
 
             List<VoznaLinija> linije = (Application.Current.MainWindow as MainWindow).vozne_linije;
             //ObservableCollection<string> vozovi_prikaz = new ObservableCollection<string>();
+            /*
             foreach (VoznaLinija linija in linije)
             {
                 //vozovi_prikaz.Add(voz.naziv);
                 Console.WriteLine(linija.Polazak + " " + linija.Dolazak);
             }
+            */
             linije_prikaz = new ObservableCollection<VoznaLinija>(linije);
 
 
@@ -77,8 +79,17 @@ namespace Projekat_HCi.PagesManager
             var selectedItem = dgrMain.SelectedItem;
             if (selectedItem != null)
             {
+                VoznaLinija v = (VoznaLinija)selectedItem;
                 linije_prikaz.Remove((VoznaLinija)selectedItem);
-                //dgrMain.Items.Remove(selectedItem);
+                foreach (VoznaLinija vl in (Application.Current.MainWindow as MainWindow).vozne_linije)
+                {
+                    if (v.Id == vl.Id)
+                    {
+                        (Application.Current.MainWindow as MainWindow).vozne_linije.Remove(vl);
+                        (Application.Current.MainWindow as MainWindow).kontroler.brisanjeVozneLinije(vl);
+                        break;
+                    }
+                }
             }
         }
 

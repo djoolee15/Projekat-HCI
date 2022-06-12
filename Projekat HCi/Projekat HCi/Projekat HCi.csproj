@@ -58,7 +58,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller.cs" />
     <Compile Include="Model\Karta.cs" />
+    <Compile Include="Model\KartaPrikaz.cs" />
+    <Compile Include="Model\RedVoznjePrikaz.cs" />
     <Compile Include="Model\Voz.cs" />
     <Compile Include="Model\VoznaLinija.cs" />
     <Compile Include="Model\Voznja.cs" />
@@ -202,6 +205,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Model\MapaSrbije.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\PrugeSrbije.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

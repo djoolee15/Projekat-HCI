@@ -9,6 +9,12 @@
       Title="VozneLinijeMreza">
 
     <Grid>
-        
+        <Viewbox Name="viewbox1">
+        <Image>
+            <Image.Source>
+                <BitmapImage  UriSource="C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\Model\PrugeSrbije.jpg" />
+            </Image.Source>
+        </Image>
+        </Viewbox>
     </Grid>
 </Page>

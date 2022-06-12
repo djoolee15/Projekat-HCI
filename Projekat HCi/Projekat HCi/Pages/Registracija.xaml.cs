@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projekat_HCi.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,27 @@ namespace Projekat_HCi.Pages
 
         private void Registracija_Click(object sender, RoutedEventArgs e)
         {
-           
+            bool pronadjen = false;
+            foreach (Korisnik k in (Application.Current.MainWindow as MainWindow).korisnici)
+            {
+                if (k.KorisnickoIme == KorisnickoIme.Text)
+                {
+                        pronadjen = true;
+                }
+            }
+            if (pronadjen is true)
+            {
+                MessageBox.Show("Vec postoji korisnik sa ovim korisnickim imenom!");
+                KorisnickoIme.Clear();
+                Lozinka.Clear();
+            }
+            else {
+                Korisnik k = new Korisnik { KorisnickoIme = KorisnickoIme.Text, Ime = Ime.Text, Prezime = Prezime.Text, Lozinka = Lozinka.Password.ToString(), Mejl = Email.Text};
+                (Application.Current.MainWindow as MainWindow).korisnici.Add(k);
+                PocetnaUlogovaniKorisnik logged = new PocetnaUlogovaniKorisnik();
+                logged.Show();
+            }
         }
+
     }
 }

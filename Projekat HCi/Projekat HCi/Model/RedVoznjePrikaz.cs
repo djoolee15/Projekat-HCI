@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Projekat_HCi.Model
 {
-    public class Voznja : INotifyPropertyChanged
+    public class RedVoznjePrikaz : INotifyPropertyChanged
     {
 
 
@@ -19,12 +19,19 @@ namespace Projekat_HCi.Model
                 PropertyChanged(this, new PropertyChangedEventArgs(name));
             }
         }
+
+
         private int id;
-        private Voz voz;
-        private List<Karta> rezKarte;
-        private List<Karta> prodKarte;
-        private VoznaLinija vl;
+
+
+
+        private string naziv_voza;
+        private string dolazak;
+        private string polazak;
         private DateTime datum_voznje;
+
+
+       
 
 
         public int Id
@@ -43,69 +50,56 @@ namespace Projekat_HCi.Model
             }
         }
 
-
-        public Voz Voz
+        public string Naziv_voza
         {
             get
             {
-                return voz;
+                return naziv_voza;
             }
             set
             {
-                if (value != voz)
+                if (value != naziv_voza)
                 {
-                    voz = value;
-                    OnPropertyChanged("Voz");
+                    naziv_voza = value;
+                    OnPropertyChanged("Naziv_voza");
                 }
             }
         }
-        public List<Karta> RezKarte
+       
+        public string Dolazak
         {
             get
             {
-                return rezKarte;
+                return dolazak;
             }
             set
             {
-                if (value != rezKarte)
+                if (value != dolazak)
                 {
-                    rezKarte = value;
-                    OnPropertyChanged("RezKarte");
-                }
-            }
-        }
-
-        public List<Karta> ProdKarte
-        {
-            get
-            {
-                return prodKarte;
-            }
-            set
-            {
-                if (value != prodKarte)
-                {
-                    prodKarte = value;
-                    OnPropertyChanged("ProdKarte");
+                    dolazak = value;
+                    OnPropertyChanged("Dolazak");
                 }
             }
         }
 
-        public VoznaLinija Vl
+
+        public string Polazak
         {
             get
             {
-                return vl;
+                return polazak;
             }
             set
             {
-                if (value != vl)
+                if (value != polazak)
                 {
-                    vl = value;
-                    OnPropertyChanged("Vl");
+                    polazak = value;
+                    OnPropertyChanged("Polazak");
                 }
             }
         }
+
+
 
         public DateTime DatumVoznje
         {
@@ -129,4 +123,6 @@ namespace Projekat_HCi.Model
 
 
     }
+
+
 }

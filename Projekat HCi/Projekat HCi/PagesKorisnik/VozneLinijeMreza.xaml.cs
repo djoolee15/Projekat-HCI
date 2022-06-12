@@ -23,6 +23,46 @@ namespace Projekat_HCi.PagesKorisnik
         public VozneLinijeMreza()
         {
             InitializeComponent();
+           
+
         }
+       
+
+        /*
+        private void MainWindow_OnMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            UpdateViewBox((e.Delta > 0) ? 5 : -5);
+        }
+
+        private void UpdateViewBox(int newValue)
+        {
+            if ((ZoomViewbox.Width >= 0) && ZoomViewbox.Height >= 0)
+            {
+                ZoomViewbox.Width += newValue;
+                ZoomViewbox.Height += newValue;
+            }
+        }
+        
+        private void slider1_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            var scaler = mainPanel.LayoutTransform as ScaleTransform;
+
+            if (scaler == null)
+            {
+                mainPanel.LayoutTransform = new ScaleTransform(slider1.Value, slider1.Value);
+            }
+            else if (scaler.HasAnimatedProperties)
+            {
+                // Do nothing because the value is being changed by animation.
+                // Setting scaler.ScaleX will cause infinite recursion due to the
+                // binding specified in the XAML.
+            }
+            else
+            {
+                scaler.ScaleX = slider1.Value;
+                scaler.ScaleY = slider1.Value;
+            }
+        }
+        */
     }
 }

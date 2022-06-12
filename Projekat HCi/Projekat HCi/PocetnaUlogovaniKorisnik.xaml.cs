@@ -23,6 +23,7 @@ namespace Projekat_HCi
         public PocetnaUlogovaniKorisnik()
         {
             InitializeComponent();
+            PocetnaKorisnik.Content = new RedVoznje();
         }
 
         private void RedVoznje_Click(object sender, RoutedEventArgs e)
@@ -44,7 +45,7 @@ namespace Projekat_HCi
 
         private void VozneLinije_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaKorisnik.Content = new RedVoznje();
+            PocetnaKorisnik.Content = new VozneLinije();
 
             VozneLinije.Background = Brushes.Navy;
             VozneLinije.Foreground = Brushes.White;
@@ -61,7 +62,7 @@ namespace Projekat_HCi
 
         private void Mreza_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaKorisnik.Content = new RedVoznje();
+            PocetnaKorisnik.Content = new VozneLinijeMreza();
 
             Mreza.Background = Brushes.Navy;
             Mreza.Foreground = Brushes.White;
@@ -77,7 +78,7 @@ namespace Projekat_HCi
 
         private void KupljeneKarte_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaKorisnik.Content = new RedVoznje();
+            PocetnaKorisnik.Content = new KupljeneKarte();
 
             KupljeneKarte.Background = Brushes.Navy;
             KupljeneKarte.Foreground = Brushes.White;
@@ -94,7 +95,7 @@ namespace Projekat_HCi
 
         private void RezKarte_Click(object sender, RoutedEventArgs e)
         {
-            PocetnaKorisnik.Content = new RedVoznje();
+            PocetnaKorisnik.Content = new RezervisaneKarte();
 
             RezKarte.Background = Brushes.Navy;
             RezKarte.Foreground = Brushes.White;

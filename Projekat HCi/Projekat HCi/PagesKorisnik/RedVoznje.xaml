@@ -9,6 +9,13 @@
       Title="RedVoznje">
 
     <Grid>
-        
+        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=red_voznje_prikaz_str}" IsReadOnly="False" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Naziv Voza" MinWidth="100" Binding="{Binding Naziv_voza}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Polazak" MinWidth="100" Binding="{Binding Polazak}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Dolazak" MinWidth="100" Binding="{Binding Dolazak}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Datum Voznje" MinWidth="100" Binding="{Binding DatumVoznje}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Page>

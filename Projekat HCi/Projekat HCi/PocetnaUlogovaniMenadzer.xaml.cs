@@ -23,6 +23,8 @@ namespace Projekat_HCi
         public PocetnaUlogovaniMenadzer()
         {
             InitializeComponent();
+            PocetnaMenadzer.Content = new IzmenaRedVoznje();
+
         }
 
         private void iredavoznje_Click(object sender, RoutedEventArgs e)

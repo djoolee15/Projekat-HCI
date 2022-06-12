@@ -34,7 +34,7 @@ namespace Projekat_HCi.PagesManager
 
 
 
-        public ObservableCollection<Voznja> redovi_voznje
+        public ObservableCollection<RedVoznjePrikaz> red_voznje_prikaz_str
         {
             get;
             set;
@@ -46,14 +46,9 @@ namespace Projekat_HCi.PagesManager
             InitializeComponent();
             this.DataContext = this;
 
+            List<RedVoznjePrikaz> rv = (Application.Current.MainWindow as MainWindow).red_voznje_prikaz;
 
-
-
-
-            List<Voznja> redovi = (Application.Current.MainWindow as MainWindow).voznje;
-            //ObservableCollection<string> vozovi_prikaz = new ObservableCollection<string>();
-            redovi_voznje = new ObservableCollection<Voznja>(redovi);
-
+            red_voznje_prikaz_str = new ObservableCollection<RedVoznjePrikaz>(rv);
 
 
             //cmbColors.ItemsSource = vozovi_prikaz;
@@ -69,18 +64,42 @@ namespace Projekat_HCi.PagesManager
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+
+            foreach (Karta k in (Application.Current.MainWindow as MainWindow).karte) { 
+                Console.Write(k.Id);
+            }
+
+
             var selectedItem = dgrMain.SelectedItem;
             if (selectedItem != null)
             {
-                redovi_voznje.Remove((Voznja)selectedItem);
+                RedVoznjePrikaz rvp = (RedVoznjePrikaz)selectedItem;
+                red_voznje_prikaz_str.Remove((RedVoznjePrikaz)selectedItem);
+                (Application.Current.MainWindow as MainWindow).red_voznje_prikaz.Remove((RedVoznjePrikaz)selectedItem);
+                foreach (Voznja v in (Application.Current.MainWindow as MainWindow).voznje)
+                {
+                    if(v.Id == rvp.Id ){
+                       
+                        (Application.Current.MainWindow as MainWindow).red_voznje_prikaz.Remove(rvp);
+                        (Application.Current.MainWindow as MainWindow).kontroler.brisanjeRedaVoznje(rvp);
+                        break;
+                    }
+                }
+                //(Application.Current.MainWindow as MainWindow).voznje.Remove((Voznja)selectedItem);
+                foreach (Karta k in (Application.Current.MainWindow as MainWindow).karte)
+                { 
+                Console.Write(k.Id);
+                }
                 //dgrMain.Items.Remove(selectedItem);
             }
         }
 
+        
+
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
-            
+
+            /*
 
 
             DateTime vreme_voznje = DateTime.ParseExact(br_m.Text, "hh:mm tt", System.Globalization.CultureInfo.CurrentCulture);
@@ -90,8 +109,15 @@ namespace Projekat_HCi.PagesManager
             redovi_voznje.Add(voznja);
             (Application.Current.MainWindow as MainWindow).voznje.Add(voznja as Voznja);
             this.InitializeComponent();
-
+             */
         }
+
+        
+
+
+
+
+
         /*
 private DelegateCommand<Voz> _deleteCommand;
 public DelegateCommand<Voz> DeleteCommand =>
