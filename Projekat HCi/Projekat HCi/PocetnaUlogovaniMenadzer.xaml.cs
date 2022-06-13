@@ -114,7 +114,17 @@ namespace Projekat_HCi
 
         private void LogOut_Click(object sender, RoutedEventArgs e)
         {
-            
+            this.Close();
+            (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = null;
+            /*
+            var parentWindow = this.Parent as Window;
+
+            if (parentWindow != null)
+            {
+                parentWindow.Close();
+                (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = null;
+            }
+            */
         }
     }
 

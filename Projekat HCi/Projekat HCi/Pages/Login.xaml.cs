@@ -43,15 +43,19 @@ namespace Projekat_HCi.Pages
                 if (k.KorisnickoIme == KorisnickoIme.Text && k.Lozinka == Lozinka.Password.ToString())
                 {
                     if (k.KorisnickoIme == "djole") {
+
                         PocetnaUlogovaniMenadzer logged = new PocetnaUlogovaniMenadzer();
                         logged.Show();
+                        (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = k;
                         pronadjen = true;
+
                         
                     }
                     else { 
                     PocetnaUlogovaniKorisnik logged = new PocetnaUlogovaniKorisnik();
                     logged.Show();
                     pronadjen = true;
+                    (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = k;
                     }
                 }
             }

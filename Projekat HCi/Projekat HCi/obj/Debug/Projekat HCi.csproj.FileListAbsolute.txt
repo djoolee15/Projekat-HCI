@@ -77,3 +77,5 @@ C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projeka
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\bin\Debug\Prism.xml
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi.csproj.CopyComplete
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi_Content.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\Kupovina.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\Kupovina.baml

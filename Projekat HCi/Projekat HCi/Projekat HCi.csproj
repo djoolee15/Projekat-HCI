@@ -68,6 +68,9 @@
     <Compile Include="PagesKorisnik\KupljeneKarte.xaml.cs">
       <DependentUpon>KupljeneKarte.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PagesKorisnik\Kupovina.xaml.cs">
+      <DependentUpon>Kupovina.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PagesKorisnik\RedVoznje.xaml.cs">
       <DependentUpon>RedVoznje.xaml</DependentUpon>
     </Compile>
@@ -112,6 +115,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PagesKorisnik\KupljeneKarte.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PagesKorisnik\Kupovina.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

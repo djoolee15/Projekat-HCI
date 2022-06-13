@@ -41,6 +41,8 @@ namespace Projekat_HCi
             RezKarte.Foreground = Brushes.Black;
             KupljeneKarte.Background = Brushes.White;
             KupljeneKarte.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.White;
+            Kupovina.Foreground = Brushes.Black;
         }
 
         private void VozneLinije_Click(object sender, RoutedEventArgs e)
@@ -58,6 +60,8 @@ namespace Projekat_HCi
             RezKarte.Foreground = Brushes.Black;
             KupljeneKarte.Background = Brushes.White;
             KupljeneKarte.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.White;
+            Kupovina.Foreground = Brushes.Black;
         }
 
         private void Mreza_Click(object sender, RoutedEventArgs e)
@@ -74,6 +78,8 @@ namespace Projekat_HCi
             RezKarte.Foreground = Brushes.Black;
             KupljeneKarte.Background = Brushes.White;
             KupljeneKarte.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.White;
+            Kupovina.Foreground = Brushes.Black;
         }
 
         private void KupljeneKarte_Click(object sender, RoutedEventArgs e)
@@ -91,6 +97,8 @@ namespace Projekat_HCi
             RezKarte.Foreground = Brushes.Black;
             RedVoznje.Background = Brushes.White;
             RedVoznje.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.White;
+            Kupovina.Foreground = Brushes.Black;
         }
 
         private void RezKarte_Click(object sender, RoutedEventArgs e)
@@ -107,11 +115,43 @@ namespace Projekat_HCi
             RedVoznje.Foreground = Brushes.Black;
             KupljeneKarte.Background = Brushes.White;
             KupljeneKarte.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.White;
+            Kupovina.Foreground = Brushes.Black;
         }
 
         private void LogOut_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+            (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = null;
+            /*
+            var parentWindow = this.Parent as Window;
 
+                if (parentWindow != null)
+                {
+                    parentWindow.Close();
+                    (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = null;
+                }
+            */
+        }
+
+        private void Kupovina_Click(object sender, RoutedEventArgs e)
+        {
+            PocetnaKorisnik.Content = new Kupovina();
+
+
+            RezKarte.Background = Brushes.White;
+            RezKarte.Foreground = Brushes.Black;
+
+            VozneLinije.Background = Brushes.White;
+            VozneLinije.Foreground = Brushes.Black;
+            Mreza.Background = Brushes.White;
+            Mreza.Foreground = Brushes.Black;
+            RedVoznje.Background = Brushes.White;
+            RedVoznje.Foreground = Brushes.Black;
+            KupljeneKarte.Background = Brushes.White;
+            KupljeneKarte.Foreground = Brushes.Black;
+            Kupovina.Background = Brushes.Navy;
+            Kupovina.Foreground = Brushes.White;
         }
     }
 }

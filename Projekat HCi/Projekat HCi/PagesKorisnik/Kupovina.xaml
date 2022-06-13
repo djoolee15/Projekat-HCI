@@ -1,0 +1,39 @@
+﻿<Page x:Class="Projekat_HCi.PagesKorisnik.Kupovina"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat_HCi.PagesKorisnik"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Kupovina">
+
+    <Grid>
+        <DataGrid x:Name="dgrMain" CanUserAddRows="False" ItemsSource="{Binding Path=red_voznje_prikaz_str}" IsReadOnly="False" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Naziv Voza" MinWidth="100" Binding="{Binding Naziv_voza}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Polazak" MinWidth="100" Binding="{Binding Polazak}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Dolazak" MinWidth="100" Binding="{Binding Dolazak}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Datum Voznje" MinWidth="100" Binding="{Binding DatumVoznje}"></DataGridTextColumn>
+                <DataGridTemplateColumn Header="Rezervacija" MinWidth="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Rezervisi Kartu" Click="Button_Click" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Header="Kupovina" MinWidth="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button Content="Kupi Kartu" Click="Button_Click_1"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

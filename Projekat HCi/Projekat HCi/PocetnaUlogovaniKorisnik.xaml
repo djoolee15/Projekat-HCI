@@ -16,13 +16,16 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Name="RedVoznje" Content="Red Voznje"   Background="Navy" Foreground="White" Grid.Column ="0"  MinWidth="100" Margin="0,0,0,0" Click="RedVoznje_Click"/>
-                <Button Name="VozneLinije" Content="Vozne Linije"  Background="White" Foreground="Black" Grid.Column ="1"  MinWidth="100" Margin="0,0,0,0" Click="VozneLinije_Click"/>
-                <Button Name="Mreza" Content="Vozne Linije - Mreza"  Background="White" Foreground="Black" Grid.Column ="2"  MinWidth="100" Margin="0,0,0,0" Click="Mreza_Click"/>
-                <Button Name="KupljeneKarte" Content="Kupljenje Karte"  Background="White" Foreground="Black" Grid.Column ="3"  MinWidth="100" Margin="0,0,0,0" Click="KupljeneKarte_Click"/>
-                <Button Name="RezKarte" Content="Rezervisane Karte"  Background="White" Foreground="Black" Grid.Column ="4"  MinWidth="100" Margin="0,0,0,0" Click="RezKarte_Click"/>
-                <Button Name="LogOut" Content="Odjava"  Background="White" Foreground="Black" Grid.Column ="5"  MinWidth="50" Margin="25,10,25,10" Click="LogOut_Click"/>
+                <Button Name="RedVoznje" Content="Red Voznje"   Background="Navy" Foreground="White" Grid.Column ="1"  MinWidth="100" Margin="0,0,0,0" Click="RedVoznje_Click"/>
+                <Button Name="VozneLinije" Content="Vozne Linije"  Background="White" Foreground="Black" Grid.Column ="2"  MinWidth="100" Margin="0,0,0,0" Click="VozneLinije_Click"/>
+                <Button Name="Mreza" Content="Vozne Linije - Mreza"  Background="White" Foreground="Black" Grid.Column ="3"  MinWidth="100" Margin="0,0,0,0" Click="Mreza_Click"/>
+                <Button Name="KupljeneKarte" Content="Kupljenje Karte"  Background="White" Foreground="Black" Grid.Column ="4"  MinWidth="100" Margin="0,0,0,0" Click="KupljeneKarte_Click"/>
+                <Button Name="RezKarte" Content="Rezervisane Karte"  Background="White" Foreground="Black" Grid.Column ="5"  MinWidth="100" Margin="0,0,0,0" Click="RezKarte_Click"/>
+                <Button Name="LogOut" Content="Odjava"  Background="White" Foreground="Black" Grid.Column ="6"  MinWidth="50" Margin="25,10,25,10" Click="LogOut_Click"/>
+                <Button Name="Kupovina" Content="Kupovina Karte"   Background="White" Foreground="Black" Grid.Column ="0"  MinWidth="100" Margin="0,0,0,0" Click="Kupovina_Click"/>
+
             </Grid>
             <Frame x:Name="PocetnaKorisnik" DockPanel.Dock="Bottom"/>
         </DockPanel>
