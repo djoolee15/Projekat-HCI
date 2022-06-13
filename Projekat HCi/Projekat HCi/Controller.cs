@@ -20,7 +20,7 @@ namespace Projekat_HCi
                         if(rvp.Id == voznja.Id){
                             (Application.Current.MainWindow as MainWindow).red_voznje_prikaz.Remove(rvp); // BRISANJE PRIKAZA VOZNJE ODNOSNO REDA VOZNJE
                             break;
-                    }
+                        }
                     
 
 

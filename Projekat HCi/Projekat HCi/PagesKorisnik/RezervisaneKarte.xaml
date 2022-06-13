@@ -9,24 +9,57 @@
       Title="RezervisaneKarte">
 
     <Grid>
-        <DataGrid x:Name="dgrMain" ItemsSource="{Binding Path=karte_prikaz}" IsReadOnly="False" AutoGenerateColumns="False" IsSynchronizedWithCurrentItem="True">
-            <DataGrid.Columns>
-                <DataGridTemplateColumn Header="ID" MinWidth="100">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <StackPanel Orientation="Horizontal">
-                                <TextBlock Text="{Binding Id}"/>
-                            </StackPanel>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-                <DataGridTextColumn Header="Naziv Voza" MinWidth="100" Binding="{Binding Naziv_voza}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Polazak" MinWidth="100" Binding="{Binding Polazak}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Dolazak" MinWidth="100" Binding="{Binding Dolazak}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Datum Voznje" MinWidth="100" Binding="{Binding Datum_voznje}"></DataGridTextColumn>
-            </DataGrid.Columns>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.Row="0" FontWeight="Bold" Grid.ColumnSpan="2"  Text="Prevucite kartu na desnu stranu ukoliko zelite da je kupite!" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock  Grid.Row="1" Grid.Column="0" FontWeight="Bold"  Text="Rezervisane karte" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBlock  Grid.Row="1" Grid.Column="1" FontWeight="Bold"  Text="Kupljene karte" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
 
-        </DataGrid>
+        <ListView  Grid.Column="0" Grid.Row="2" ItemsSource="{Binding karte_prikaz}" PreviewMouseLeftButtonDown="ListView_PreviewMouseLeftButtonDown" MouseMove="ListView_MouseMove">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Id}" FontWeight="Bold" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding Naziv_voza}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Polazak}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Dolazak}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Datum_voznje}" />
+                        <TextBlock Text="," />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <ListView Grid.Column="1" Grid.Row="2" ItemsSource="{Binding karte_prikaz_2}" AllowDrop="True" DragEnter="ListView_DragEnter" Drop="ListView_Drop">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="{Binding Id}" FontWeight="Bold" />
+                        <TextBlock Text=", " />
+                        <TextBlock Text="{Binding Naziv_voza}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Polazak}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Dolazak}" />
+                        <TextBlock Text="," />
+                        <TextBlock Text="{Binding Datum_voznje}" />
+                        <TextBlock Text="," />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
     </Grid>
 </Page>
