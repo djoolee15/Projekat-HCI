@@ -116,17 +116,28 @@ namespace Projekat_HCi.PagesManager
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            string naziv = naziv_1.Text;
+            bool pronadjen = false;
             int id = int.Parse(id_1.Text);
-            int br_mesta = int.Parse(br_m.Text);
-            int br_vagona = int.Parse(br_v.Text);
-           
-           
-            Voz voz1 = new Voz { Broj_mesta = br_mesta, Broj_vagona = br_vagona, Naziv = naziv, Id = id };
-            vozovi_prikaz.Add(voz1);
-            (Application.Current.MainWindow as MainWindow).vozovi.Add(voz1 as Voz);
-            this.InitializeComponent();
+            foreach (Voz v in vozovi_prikaz) {
+                if (v.Id == id){
+                    pronadjen = true;
+                    break;
+                }
+            }
+            if (pronadjen is true) {
+                MessageBox.Show("Postoji voz sa ovim indexom!");
+            } else {
+                string naziv = naziv_1.Text;
 
+                int br_mesta = int.Parse(br_m.Text);
+                int br_vagona = int.Parse(br_v.Text);
+
+
+                Voz voz1 = new Voz { Broj_mesta = br_mesta, Broj_vagona = br_vagona, Naziv = naziv, Id = id };
+                vozovi_prikaz.Add(voz1);
+                (Application.Current.MainWindow as MainWindow).vozovi.Add(voz1 as Voz);
+                this.InitializeComponent();
+            }
         }
         /*
         private DelegateCommand<Voz> _deleteCommand;

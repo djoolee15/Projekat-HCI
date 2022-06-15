@@ -79,3 +79,5 @@ C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projeka
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\Projekat HCi_Content.g.cs
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\Kupovina.g.cs
 C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\PagesKorisnik\Kupovina.baml
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\ProzorPomoc.g.cs
+C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\obj\Debug\ProzorPomoc.baml

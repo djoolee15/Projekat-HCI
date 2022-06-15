@@ -101,6 +101,9 @@
     <Compile Include="PocetnaUlogovaniMenadzer.xaml.cs">
       <DependentUpon>PocetnaUlogovaniMenadzer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ProzorPomoc.xaml.cs">
+      <DependentUpon>ProzorPomoc.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\Zeleznica.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -174,6 +177,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ProzorPomoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Korisnik.cs" />
@@ -216,7 +223,9 @@
     <Resource Include="Model\MapaSrbije.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Model\-train_90433.ico" />
     <Content Include="Model\PrugeSrbije.jpg" />
+    <Content Include="Model\Tutorijal_HCI_Projekat.mkv" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,7 +25,7 @@ namespace Projekat_HCi
 
 
                     foreach (Karta k in (Application.Current.MainWindow as MainWindow).karte) {
-                        if (k.Voznja == voznja) {
+                        if (k.Voznja.Id == voznja.Id) {
                             (Application.Current.MainWindow as MainWindow).karte.Remove(k); // BRISANJE KARTE
                                 foreach (KartaPrikaz kp in (Application.Current.MainWindow as MainWindow).karte_prikaz)
                                 {

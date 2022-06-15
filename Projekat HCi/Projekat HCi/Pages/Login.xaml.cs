@@ -47,6 +47,8 @@ namespace Projekat_HCi.Pages
                         PocetnaUlogovaniMenadzer logged = new PocetnaUlogovaniMenadzer();
                         logged.Show();
                         (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = k;
+                        (Application.Current.MainWindow as MainWindow).WindowState = WindowState.Minimized;
+
                         pronadjen = true;
 
                         
@@ -56,6 +58,7 @@ namespace Projekat_HCi.Pages
                     logged.Show();
                     pronadjen = true;
                     (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = k;
+                    (Application.Current.MainWindow as MainWindow).WindowState = WindowState.Minimized;
                     }
                 }
             }

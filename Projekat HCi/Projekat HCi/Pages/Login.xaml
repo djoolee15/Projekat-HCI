@@ -21,10 +21,10 @@
             
         </Grid.ColumnDefinitions>
         
-        <TextBlock Text="Korisnicko Ime: " Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30"/>
-        <TextBlock Text="Lozinka : "  Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="30" />
-        <TextBox Name="KorisnickoIme"  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="200" FontSize="30"/>
-        <PasswordBox Name ="Lozinka"  Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="200" FontSize="30"/>
+        <TextBlock Text="Korisničko Ime: " Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        <TextBlock Text="Lozinka : "  Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+        <TextBox Name="KorisnickoIme"  Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="200" FontSize="20"/>
+        <PasswordBox Name ="Lozinka"  Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="200" FontSize="20"/>
         <Button Name ="Prijava"  Grid.Column="0" Grid.Row="2" Grid.ColumnSpan ="2" Margin="20,20,20,20" Width="200" Content="PRIJAVA" Height="70" Click="Prijava_Click"/>
     </Grid>
 </Page>

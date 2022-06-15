@@ -51,7 +51,7 @@ namespace Projekat_HCi.PagesKorisnik
 
             karte_prikaz = new ObservableCollection<KartaPrikaz>();
             foreach (KartaPrikaz k in karte) {
-                if (k.Stanje == "kupljena") {
+                if (k.Stanje == "kupljena" && k.KorisnickoImeKupca == (Application.Current.MainWindow as MainWindow).ulogovani_korisnik.KorisnickoIme) {
                     karte_prikaz.Add(k);
                 }
             }

@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekat_HCi"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Početna Stranica" Height="500" Width="600"
+        Icon="C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\Model\-train_90433.ico">
     <DockPanel>
         <Grid DockPanel.Dock="Top" Height="40">
             <Grid.ColumnDefinitions>

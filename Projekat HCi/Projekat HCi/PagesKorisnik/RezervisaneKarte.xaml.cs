@@ -57,12 +57,16 @@ namespace Projekat_HCi.PagesKorisnik
             karte_prikaz_2 = new ObservableCollection<KartaPrikaz>();
 
             foreach (KartaPrikaz kp in (Application.Current.MainWindow as MainWindow).karte_prikaz) {
-                if (kp.Stanje == "rezervisana")
+                if (kp.KorisnickoImeKupca == (Application.Current.MainWindow as MainWindow).ulogovani_korisnik.KorisnickoIme)
                 {
-                    karte_prikaz.Add(kp);
-                }
-                else { 
-                    karte_prikaz_2.Add(kp);
+                    if (kp.Stanje == "rezervisana")
+                    {
+                        karte_prikaz.Add(kp);
+                    }
+                    else
+                    {
+                        karte_prikaz_2.Add(kp);
+                    }
                 }
             }
         }

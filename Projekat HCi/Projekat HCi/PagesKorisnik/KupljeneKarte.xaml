@@ -23,7 +23,7 @@
                 <DataGridTextColumn Header="Naziv Voza" MinWidth="100" Binding="{Binding Naziv_voza}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Polazak" MinWidth="100" Binding="{Binding Polazak}"></DataGridTextColumn>
                 <DataGridTextColumn Header="Dolazak" MinWidth="100" Binding="{Binding Dolazak}"></DataGridTextColumn>
-                <DataGridTextColumn Header="Datum Voznje" MinWidth="100" Binding="{Binding Datum_voznje}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Datum Vožnje" MinWidth="100" Binding="{Binding Datum_voznje}"></DataGridTextColumn>
             </DataGrid.Columns>
 
 

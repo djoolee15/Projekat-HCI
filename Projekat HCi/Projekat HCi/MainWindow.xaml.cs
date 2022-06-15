@@ -33,9 +33,13 @@ namespace Projekat_HCi
 
             Korisnik djole = new Korisnik { Ime = "Djordje", Prezime = "Vajagic", Lozinka = "1234", Mejl = "djole@gmail.com", KorisnickoIme = "djole" };
             Korisnik petar = new Korisnik { Ime = "petar", Prezime = "petrovic", Lozinka = "1234", Mejl = "petar@gmail.com", KorisnickoIme = "petar" };
+            Korisnik milan = new Korisnik { Ime = "Milan", Prezime = "Milanovic", Lozinka = "1234", Mejl = "milan@gmail.com", KorisnickoIme = "milan" };
+
             korisnici = new List<Korisnik>();
             korisnici.Add(djole);
             korisnici.Add(petar);
+            korisnici.Add(milan);
+
 
             Voz voz1 = new Voz { Broj_mesta = 30, Broj_vagona = 5, Naziv = "Super Brzi Voz", Id = 1 };
             Voz voz2 = new Voz { Broj_mesta = 20, Broj_vagona = 4, Naziv = "Ne Tako Brzi Voz", Id = 2 };
@@ -67,19 +71,25 @@ namespace Projekat_HCi
             Karta karta2 = new Karta { Id = 2, Korisnik = petar, Voznja = voznja1 , Stanje = "kupljena" , Cena = 300 };
             Karta karta3 = new Karta { Id = 3, Korisnik = petar, Voznja = voznja2 , Stanje = "rezervisana" , Cena = 300 };
             Karta karta4 = new Karta { Id = 4, Korisnik = petar, Voznja = voznja2 , Stanje = "rezervisana", Cena = 300 };
+
+            Karta karta5 = new Karta { Id = 5, Korisnik = milan, Voznja = voznja2, Stanje = "rezervisana", Cena = 300 };
+            Karta karta6 = new Karta { Id = 6, Korisnik = milan, Voznja = voznja2, Stanje = "kupljena", Cena = 300 };
+
             karte = new List<Karta>();
             karte.Add(karta1);
             karte.Add(karta2);
             karte.Add(karta3); 
             karte.Add(karta4);
+            karte.Add(karta5);
+            karte.Add(karta6);
 
             List<string> myList = new List<string>();
             myList.Add("Jun");
             myList.Add("Jul");
-            myList.Add("Avgust");
+            
             // add items to the list
-            
-            
+
+
             Random r = new Random();
             karte_prikaz = new List<KartaPrikaz>();
 

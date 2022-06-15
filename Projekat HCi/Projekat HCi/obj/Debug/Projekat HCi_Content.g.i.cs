@@ -9,5 +9,6 @@
 //------------------------------------------------------------------------------
 
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/prugesrbije.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("model/tutorijal_hci_projekat.mkv")]
 
 

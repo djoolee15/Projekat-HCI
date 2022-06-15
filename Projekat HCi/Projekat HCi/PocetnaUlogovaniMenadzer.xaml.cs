@@ -22,7 +22,9 @@ namespace Projekat_HCi
     {
         public PocetnaUlogovaniMenadzer()
         {
+            DataContext = this;
             InitializeComponent();
+           
             PocetnaMenadzer.Content = new IzmenaRedVoznje();
 
         }
@@ -126,8 +128,50 @@ namespace Projekat_HCi
             }
             */
         }
+
+        public void CtrShortcut1(Object sender, ExecutedRoutedEventArgs e)
+        {
+            iredavoznje_Click(this, e);
+        }
+
+        public void CtrShortcut2(Object sender, ExecutedRoutedEventArgs e)
+        {
+            ivoznihlinija_Click(this, e);
+        }
+
+        public void CtrShortcut3(Object sender, ExecutedRoutedEventArgs e)
+        {
+            ivozova_Click(this, e);
+        }
+
+        public void CtrShortcut4(Object sender, ExecutedRoutedEventArgs e)
+        {
+            ppmesec_Click(this, e);
+        }
+
+        public void CtrShortcut5(Object sender, ExecutedRoutedEventArgs e)
+        {
+            ppvoznja_Click(this, e);
+
+        }
+
+        public void CtrShortcut6(Object sender, ExecutedRoutedEventArgs e)
+        {
+            LogOut_Click(this,e);
+        }
+
+        public void CtrShortcut7(Object sender, ExecutedRoutedEventArgs e)
+        {
+            //MessageBox.Show("radi!");
+        }
+
+        private void HelpButton_Click(object sender, RoutedEventArgs e)
+        {
+            ProzorPomoc pp = new ProzorPomoc();
+            pp.Show();
+
+        }
     }
 
-    
 
 }

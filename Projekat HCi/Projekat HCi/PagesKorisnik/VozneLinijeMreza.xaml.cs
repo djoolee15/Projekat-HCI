@@ -23,10 +23,25 @@ namespace Projekat_HCi.PagesKorisnik
         public VozneLinijeMreza()
         {
             InitializeComponent();
-           
 
+            ZoomViewbox.Width = 100;
+            ZoomViewbox.Height = 100;
         }
-       
+
+
+        private void MainWindow_OnMouseWheel(object sender, MouseWheelEventArgs e)
+        {
+            UpdateViewBox((e.Delta > 0) ? 15 : -15);
+        }
+
+        private void UpdateViewBox(int newValue)
+        {
+            if ((ZoomViewbox.Width >= 0) && ZoomViewbox.Height >= 0)
+            {
+                ZoomViewbox.Width += newValue;
+                ZoomViewbox.Height += newValue;
+            }
+        }
 
         /*
         private void MainWindow_OnMouseWheel(object sender, MouseWheelEventArgs e)

@@ -6,10 +6,11 @@
       xmlns:local="clr-namespace:Projekat_HCi.PagesKorisnik"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="VozneLinijeMreza">
-
+      Title="VozneLinijeMreza"
+      MouseWheel="MainWindow_OnMouseWheel">
+   
     <Grid>
-        <Viewbox Name="viewbox1">
+        <Viewbox Name="ZoomViewbox" Stretch ="Uniform">
         <Image>
             <Image.Source>
                 <BitmapImage  UriSource="C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\Model\PrugeSrbije.jpg" />

@@ -40,16 +40,30 @@ namespace Projekat_HCi.PagesManager
             set;
         }
 
+        public ObservableCollection<Voz> voz_prikaz
+        {
+            get;
+            set;
+        }
+        public ObservableCollection<VoznaLinija> linija_prikaz
+        {
+            get;
+            set;
+        }
+
+
         public IzmenaRedVoznje()
         {
 
             InitializeComponent();
             this.DataContext = this;
-
+            datumBx.Text = "6/14/2022 12:40:22 PM";
             List<RedVoznjePrikaz> rv = (Application.Current.MainWindow as MainWindow).red_voznje_prikaz;
 
             red_voznje_prikaz_str = new ObservableCollection<RedVoznjePrikaz>(rv);
 
+            CmbVoz.ItemsSource = ((Application.Current.MainWindow as MainWindow).vozovi);
+            cmbVoznaLinija.ItemsSource = ((Application.Current.MainWindow as MainWindow).vozne_linije);
 
             //cmbColors.ItemsSource = vozovi_prikaz;
 
@@ -98,7 +112,7 @@ namespace Projekat_HCi.PagesManager
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            
             /*
 
 
@@ -112,7 +126,33 @@ namespace Projekat_HCi.PagesManager
              */
         }
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string inputString = datumBx.Text;
+            DateTime dDate;
+
+            int id_voznje = (Application.Current.MainWindow as MainWindow).voznje.Count();
+
+
+            if (DateTime.TryParse(inputString, out dDate) && CmbVoz.SelectedItem != null && cmbVoznaLinija.SelectedItem != null)
+            {
+                String.Format("MM/dd/yyyy hh:mm tt", dDate);
+                Voznja v = new Voznja { Id = id_voznje, Voz = (Voz)CmbVoz.SelectedItem, Vl = (VoznaLinija)cmbVoznaLinija.SelectedItem, DatumVoznje = dDate };
+                (Application.Current.MainWindow as MainWindow).voznje.Add(v);
+                RedVoznjePrikaz rvp = new RedVoznjePrikaz { Id = v.Id, Naziv_voza = v.Voz.Naziv, Polazak = v.Vl.Polazak, Dolazak = v.Vl.Dolazak, DatumVoznje = v.DatumVoznje };
+                (Application.Current.MainWindow as MainWindow).red_voznje_prikaz.Add(rvp);
+
+
+                
+
+            }
+            else
+            {
+                MessageBox.Show("Niste uneli datum u pravilnom formatu! {MM/dd/yyyy hh:mm tt}");
+            }
+        }
+
+
 
 
 

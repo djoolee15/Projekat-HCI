@@ -5,7 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Projekat_HCi"
         mc:Ignorable="d"
-        Title="PocetnaUlogovaniMenadzer" Height="450" Width="800">
+        Title="Menadzer" Height="600" Width="1000"     
+        Icon="C:\Users\djole\OneDrive\Desktop\git skinuo hci\Projekat-HCI\Projekat HCi\Projekat HCi\Model\-train_90433.ico">
+    
+    <Window.Resources>
+        <ResourceDictionary>
+            <RoutedUICommand x:Key="Ctr1" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr2" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr3" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr4" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr5" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr6" Text="Another Text" />
+            <RoutedUICommand x:Key="Ctr7" Text="Another Text" />
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.InputBindings>
+        <KeyBinding Key="F1" Modifiers="Ctrl" Command="{StaticResource Ctr1}" />
+        <KeyBinding Key="F2" Modifiers="Ctrl" Command="{StaticResource Ctr2}" />
+        <KeyBinding Key="F3" Modifiers="Ctrl" Command="{StaticResource Ctr3}" />
+        <KeyBinding Key="F4" Modifiers="Ctrl" Command="{StaticResource Ctr4}" />
+        <KeyBinding Key="F5" Modifiers="Ctrl" Command="{StaticResource Ctr5}" />
+        <KeyBinding Key="F6" Modifiers="Ctrl" Command="{StaticResource Ctr6}" />
+        <KeyBinding Key="F7" Modifiers="Ctrl" Command="{StaticResource Ctr7}" />
+    </Window.InputBindings>
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="{StaticResource Ctr1}" Executed="CtrShortcut1" />
+        <CommandBinding Command="{StaticResource Ctr2}" Executed="CtrShortcut2" />
+        <CommandBinding Command="{StaticResource Ctr3}" Executed="CtrShortcut3" />
+        <CommandBinding Command="{StaticResource Ctr4}" Executed="CtrShortcut4" />
+        <CommandBinding Command="{StaticResource Ctr5}" Executed="CtrShortcut5" />
+        <CommandBinding Command="{StaticResource Ctr6}" Executed="CtrShortcut6" />
+        <CommandBinding Command="{StaticResource Ctr7}" Executed="CtrShortcut7" />
+    </Window.CommandBindings>
     <Grid>
         <DockPanel>
             <Grid DockPanel.Dock="Top">
@@ -22,7 +54,11 @@
                 <Button Name="ivozova" Content="Izmena Vozova"  Background="White" Foreground="Black" Grid.Column ="2"  MinWidth="100" Margin="0,0,0,0" Click="ivozova_Click" />
                 <Button Name="ppmesec" Content="Pregled Prodaje - Mesec"  Background="White" Foreground="Black" Grid.Column ="3"  MinWidth="100" Margin="0,0,0,0" Click="ppmesec_Click" />
                 <Button Name="ppvoznja" Content="Pregled Prodaje - Voznja"  Background="White" Foreground="Black" Grid.Column ="4"  MinWidth="100" Margin="0,0,0,0" Click="ppvoznja_Click" />
-                <Button Name="LogOut" Content="Odjava"  Background="White" Foreground="Black" Grid.Column ="5"  MinWidth="50" Margin="25,10,25,10" Click="LogOut_Click"/>
+                <StackPanel Grid.Column ="5" Orientation="Horizontal">
+                    <Button Name="HelpButton" Content="Pomoć" Margin="20,20,10,20" Click="HelpButton_Click"/>
+                    <Button Name="LogOut" Content="Odjava"  Background="White" Foreground="Black"   MinWidth="50" Margin="25,10,25,10" Click="LogOut_Click"/>
+                    
+                </StackPanel>
             </Grid>
             <Frame x:Name="PocetnaMenadzer" DockPanel.Dock="Bottom"/>
         </DockPanel>

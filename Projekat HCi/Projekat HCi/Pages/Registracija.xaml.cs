@@ -48,6 +48,7 @@ namespace Projekat_HCi.Pages
                 (Application.Current.MainWindow as MainWindow).korisnici.Add(k);
 
                 PocetnaUlogovaniKorisnik logged = new PocetnaUlogovaniKorisnik();
+                (Application.Current.MainWindow as MainWindow).WindowState = WindowState.Minimized;
 
                 logged.Show();
                 (Application.Current.MainWindow as MainWindow).ulogovani_korisnik = k;

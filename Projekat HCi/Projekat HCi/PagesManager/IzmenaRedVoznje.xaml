@@ -32,17 +32,47 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" Grid.Row="0">Datum Voznje :</TextBlock>
+
+            <TextBlock Grid.Column="0" Grid.Row="0">Datum Vožnje :</TextBlock>
             <TextBox Name="naziv_1" Grid.Column="1" Grid.Row="0" Text="{Binding Path=DatumVoznje}"></TextBox>
-            <StackPanel Grid.Column="1" Grid.Row="4" Orientation="Horizontal">
-                <Button Content="Obrisi" Click="Button_Click" Margin="20,0,20,0" MinWidth="100"/>
-                <Button Content="Dodaj Novu Voznju" Click="Button_Click_1" Margin="20,0,20,0" MinWidth="100"/>
+            <StackPanel Grid.Column="1" Grid.Row="2" Orientation="Horizontal">
+                <Button Content="Obrisi ovu vožnju" Click="Button_Click" Margin="20,10,20,0" MinWidth="100"/>
+                
             </StackPanel>
+            <TextBlock Margin="20,10,20,0" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2">DODAVANJE NOVE VOŽNJE</TextBlock>
+
+            <TextBlock Margin="20,10,20,0" Grid.Column="0" Grid.Row="4">Izaberite Voz :</TextBlock>
+            <ComboBox Name="CmbVoz" Grid.Row="4" Grid.Column="1" Margin="20,10,20,0" MinWidth="100" >
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding Naziv}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock  Margin="20,10,20,0" Grid.Column="0" Grid.Row="5">Izaberite Voznu Liniju :</TextBlock>
+            <ComboBox Name="cmbVoznaLinija" Grid.Row="5" Grid.Column="1" Margin="20,10,20,0" MinWidth="100">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Polazak}"/>
+                            <TextBlock Text="{Binding Dolaz}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <TextBlock Grid.Column="0" Grid.Row="6"  Margin="20,10,20,0" >Unesite Datum Vožnje :</TextBlock>
+            <TextBox Name ="datumBx" Grid.Column="1" Grid.Row="6" Margin="20,10,20,0"/>
+            <Button Content="Dodajte Novu Voznju" Click="Button_Click_2" Margin="20,10,20,0" MinWidth="100" Grid.Column="1" Grid.Row="7"/>
+
+
         </Grid>
     </Grid>
 </Page>
